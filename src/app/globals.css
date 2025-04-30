@@ -10,6 +10,8 @@
   --color-blue: #0088f0;
   --color-dark-blue: #172755;
   --color-red: #ef2a82;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.125rem;
 }
 
 body {
@@ -17,4 +19,39 @@ body {
   overflow-x: hidden;
 
   scroll-behavior: smooth;
+}
+
+.nav-shadow {
+  box-shadow: 0 4 4 #12214d;
+}
+
+.clip-path {
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
+}
+
+.clip-path-lg {
+  /* clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%); */
+  @apply origin-bottom-left -rotate-6 md:-rotate-4 xl:-rotate-3;
+}
+
+@layer components {
+  h1 {
+    @apply text-3xl xl:text-5xl font-bold leading-tight; /* Large heading */
+  }
+
+  h2 {
+    @apply text-4xl font-semibold; /* Medium heading */
+  }
+
+  p {
+    @apply text-lg  leading-normal; /* Paragraph text */
+  }
+
+  small {
+    @apply text-base font-normal leading-snug; /* Small text */
+  }
+
+  legend {
+    @apply text-xs font-normal leading-snug; /* Legend text */
+  }
 }
