@@ -69,6 +69,10 @@ body {
   .marquee-item {
     @apply md:w-40 w-32;
   }
+  .service-card {
+    @apply border border-dark;
+    box-shadow: 0 5 0 0 #191a23;
+  }
 }
 
 /* marquee */

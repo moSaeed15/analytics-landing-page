@@ -9,9 +9,10 @@ const HeaderContent = () => {
         width={360}
         height={310}
         alt="hero"
+        priority
         className="mt-2 mb-5"
       />
-      <p>
+      <p className="max-w-prose">
         Our digital marketing agency helps businesses grow and succeed online
         through a range of services including SEO, PPC, social media marketing,
         and content creation.
