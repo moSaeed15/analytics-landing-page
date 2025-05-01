@@ -53,4 +53,48 @@ body {
   p {
     @apply text-base xl:text-lg font-normal  leading-6; /* Paragraph text */
   }
+
+  .padding-x {
+    @apply pl-5 pr-7;
+  }
+
+  .button-dark {
+    @apply bg-dark text-white w-full rounded-2xl mt-10 py-5 text-xl;
+  }
+
+  .gradient-edge {
+    @apply w-36 h-full absolute bottom-0 z-20;
+  }
+
+  .marquee-item {
+    @apply md:w-40 w-32;
+  }
 }
+
+/* marquee */
+.marquee {
+  width: 100dvw;
+  overflow: hidden;
+  position: relative;
+}
+.marquee-box {
+  display: flex;
+  align-items: center;
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 60s linear infinite;
+}
+.marquee-item {
+  float: left;
+}
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+/* marquee end */
