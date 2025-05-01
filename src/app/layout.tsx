@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
-import { Roboto } from 'next/font/google';
+import { Space_Grotesk } from 'next/font/google';
 
-const roboto = Roboto({
+const spaceGrotesk = Space_Grotesk({
   weight: ['400', '500', '700'],
   subsets: ['latin'],
 });
@@ -19,8 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} h-[200vh] antialiased`}>
-        {children}
+      <body className={`${spaceGrotesk.className} h-[200vh] antialiased`}>
+        <main>{children}</main>
       </body>
     </html>
   );
