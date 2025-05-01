@@ -21,12 +21,18 @@ const ServiceCard = ({
   const restOfTitle = words.join(' '); // Join the remaining words
 
   return (
-    <div className={` flex flex-col p-12 rounded-lg ${className} `}>
+    <div className={` flex flex-col p-12 rounded-4xl ${className} `}>
       <h3 className={`${textClassName} w-fit rounded-lg`}>{restOfTitle}</h3>
       <h3 className={`${textClassName} w-fit rounded-lg`}> {lastWord}</h3>
 
       <div className="flex justify-between">
-        <Image src={icon} alt="arrow-icon" width={41} height={41} />
+        <Image
+          src={icon}
+          alt="arrow-icon"
+          width={41}
+          height={41}
+          className="self-end"
+        />
         <Image src={image} alt="service-image" width={165} height={130} />
       </div>
     </div>

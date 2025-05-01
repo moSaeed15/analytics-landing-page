@@ -1,3 +1,4 @@
+import { logosIconsList } from '@/constants';
 import Image from 'next/image';
 
 type LogoIconProps = {
@@ -17,42 +18,18 @@ const LogoIcon = ({ icon }: LogoIconProps) => {
 };
 
 const Timeline = () => {
-  const logosIconsList = [
-    {
-      src: '/icons/Company-logo.svg',
-      alt: 'Amazon',
-    },
-    {
-      src: '/icons/Company-logo-1.svg',
-      alt: 'dribble',
-    },
-    {
-      src: '/icons/Company-logo-2.svg',
-      alt: 'hubspot',
-    },
-    {
-      src: '/icons/Company-logo-3.svg',
-      alt: 'notion',
-    },
-    {
-      src: '/icons/Company-logo-4.svg',
-      alt: 'netflix',
-    },
-    {
-      src: '/icons/Company-logo-5.svg',
-      alt: 'zoom',
-    },
-  ];
-
   return (
     <div className="md:my-20 my-10 relative">
       <div className="gradient-edge" />
       <div className="gradient-edge" />
-      <div className="marquee h-52">
+      <div className="marquee h-40">
         <div className="marquee-box md:gap-12 gap-5">
           {logosIconsList.map(icon => (
             <LogoIcon key={icon.alt} icon={icon} />
           ))}
+
+          {/* repeated the icons to create a continuous effect */}
+
           {logosIconsList.map(icon => (
             <LogoIcon key={icon.alt} icon={icon} />
           ))}

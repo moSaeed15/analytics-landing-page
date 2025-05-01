@@ -17,7 +17,7 @@ const HeaderContent = () => {
         through a range of services including SEO, PPC, social media marketing,
         and content creation.
       </p>
-      <button className="button-dark">Book a consultation</button>
+      <button className="button-dark mt-10">Book a consultation</button>
     </div>
   );
 };
