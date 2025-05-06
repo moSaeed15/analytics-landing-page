@@ -1,6 +1,7 @@
 import CaseStudies from '@/components/CaseStudies';
 import Header from '@/components/header/Header';
 import Services from '@/components/services/Services';
+import WorkingProcess from '@/components/WorkingProcess';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Services />
       <CaseStudies />
+      <WorkingProcess />
     </div>
   );
 }
