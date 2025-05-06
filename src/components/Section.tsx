@@ -14,7 +14,9 @@ const Section = ({ title, subtitle, description, children }: SectionProps) => {
       {subtitle && (
         <h2 className="green-title text-center self-center">{subtitle}</h2>
       )}
-      <p className="mt-7 mb-10 text-center max-w-prose">{description}</p>
+      <p className="mt-7 mb-10 text-center max-w-prose self-center">
+        {description}
+      </p>
       {children}
     </section>
   );

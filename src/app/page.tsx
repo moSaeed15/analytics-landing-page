@@ -2,6 +2,7 @@ import CaseStudies from '@/components/case-studies/CaseStudies';
 import Header from '@/components/header/Header';
 import Services from '@/components/services/Services';
 import Team from '@/components/team/Team';
+import Testimonials from '@/components/testimonials/Testimonials';
 import WorkingProcess from '@/components/working-process/WorkingProcess';
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <CaseStudies />
       <WorkingProcess />
       <Team />
+      <Testimonials />
     </div>
   );
 }

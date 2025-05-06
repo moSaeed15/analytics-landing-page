@@ -78,12 +78,20 @@ body {
     box-shadow: 0 5 0 0 #191a23;
   }
 
+  .bg-chat {
+    background-image: url('/icons/union.svg');
+  }
+
   .green-title {
     @apply bg-green px-2 text-black rounded-lg;
   }
   .white-title {
     @apply bg-white px-2 text-black;
   }
+}
+
+.clip-half-triangle {
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
 }
 
 /* marquee */
