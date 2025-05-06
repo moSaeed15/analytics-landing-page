@@ -128,3 +128,51 @@ export const workingProcessList = [
       'Digital marketing is an ongoing process, and we are committed to helping you achieve long-term success. We will work with you to continually refine and improve your marketing strategies, ensuring that you stay ahead of the competition and continue to meet your business goals.',
   },
 ];
+
+export const teamMembersList = [
+  {
+    id: 0,
+    name: 'John Smith',
+    position: 'CEO and Founder',
+    experience:
+      '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
+    picture: '/team/team-1.png',
+  },
+  {
+    id: 1,
+    name: 'Jane Doe',
+    position: 'Director of Operations',
+    experience:
+      '7+ years of experience in project management and team leadership. Strong organizational and communication skills',
+    picture: '/team/team-2.png',
+  },
+  {
+    id: 2,
+    name: 'Mohammed Saeed',
+    position: 'Content Creator',
+    experience: `6+ years of experience in writing and editing
+Skilled in creating compelling, SEO-optimized content for various industries`,
+    picture: '/team/team-6.png',
+  },
+  {
+    id: 3,
+    name: 'Michael Brown',
+    position: 'Senior SEO Specialist',
+    experience: `5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization`,
+    picture: '/team/team-3.png',
+  },
+  {
+    id: 4,
+    name: 'Emily Johnson',
+    position: 'PPC Manager',
+    experience: `3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis`,
+    picture: '/team/team-4.png',
+  },
+  {
+    id: 5,
+    name: 'Brian Williams',
+    position: 'Social Media Specialist',
+    experience: `4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement`,
+    picture: '/team/team-5.png',
+  },
+];
