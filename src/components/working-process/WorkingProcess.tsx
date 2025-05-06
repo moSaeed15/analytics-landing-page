@@ -1,14 +1,14 @@
 import { workingProcessList } from '@/constants';
 import WorkingProcessCard from './WorkingProcessCard';
+import Section from '../Section';
 
 const WorkingProcess = () => {
   return (
-    <section className="padding-x flex flex-col">
-      <h2 className="green-title text-center self-center ">Our Working</h2>
-      <h2 className="green-title text-center self-center">Process</h2>
-      <p className="mt-7 mb-7  text-center max-w-prose">
-        Step-by-Step Guide to Achieving Your Business Goals
-      </p>
+    <Section
+      title="Our Working"
+      subtitle="Process"
+      description="Step-by-Step Guide to Achieving Your Business Goals"
+    >
       <div className="flex flex-col gap-5">
         {workingProcessList.map(item => (
           <WorkingProcessCard
@@ -19,7 +19,7 @@ const WorkingProcess = () => {
           />
         ))}
       </div>
-    </section>
+    </Section>
   );
 };
 
