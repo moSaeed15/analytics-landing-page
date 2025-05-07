@@ -63,7 +63,7 @@ body {
   }
 
   .button-dark {
-    @apply bg-dark text-white w-full rounded-2xl  py-5 text-xl;
+    @apply min-h-16 bg-dark text-white w-full rounded-2xl  py-5 text-xl mt-7 cursor-pointer hover:bg-dark/90;
   }
 
   .gradient-edge {
