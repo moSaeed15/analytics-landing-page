@@ -46,7 +46,9 @@ const TestimonialControl = ({ api }: { api: CarouselApi }) => {
         height={20}
         onClick={() => api?.scrollNext()}
         className={` ${
-          currentIndex !== 4 ? 'invert-0 cursor-pointer' : 'invert-50'
+          currentIndex !== (api?.slideNodes()?.length ?? 0) - 1
+            ? 'invert-0 cursor-pointer'
+            : 'invert-50'
         }`}
       />
     </div>

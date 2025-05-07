@@ -7,6 +7,7 @@
   --color-main: #172755;
   --color-green: #b9ff66;
   --color-dark: #191a23;
+  --color-dark-100: #292a32;
   --color-grey: #f3f3f3;
   --color-black: #000000;
   --text-2xl: 1.625rem;
@@ -53,7 +54,9 @@ body {
   p {
     @apply text-base xl:text-lg font-normal  leading-6; /* Paragraph text */
   }
-
+  li {
+    @apply text-base xl:text-lg font-normal  leading-6; /* List item text */
+  }
   .padding-x {
     @apply pl-5 pr-7;
   }
@@ -64,6 +67,9 @@ body {
 
   .button-dark {
     @apply min-h-16 bg-dark text-white w-full rounded-2xl  py-5 text-xl mt-7 cursor-pointer hover:bg-dark/90;
+  }
+  .button-green {
+    @apply min-h-16 bg-green text-black w-full rounded-2xl  py-5 text-xl mt-7 cursor-pointer hover:bg-green/90;
   }
 
   .gradient-edge {
