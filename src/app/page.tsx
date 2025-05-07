@@ -1,5 +1,6 @@
 import CaseStudies from '@/components/case-studies/CaseStudies';
 import Contact from '@/components/contact/Contact';
+import Footer from '@/components/Footer';
 import Header from '@/components/header/Header';
 import Services from '@/components/services/Services';
 import Team from '@/components/team/Team';
@@ -16,6 +17,7 @@ export default function Home() {
       <Team />
       <Testimonials />
       <Contact />
+      <Footer />
     </div>
   );
 }

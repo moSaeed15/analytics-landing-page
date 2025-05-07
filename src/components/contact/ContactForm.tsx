@@ -4,10 +4,10 @@ import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 
 import { Button } from '@/components/ui/button';
-import { Form } from '@/components/ui/form';
+import { Form, FormMessage } from '@/components/ui/form';
 import CustomFormField from './FormRender';
 
-const formSchema = z.object({
+const ContactFormSchema = z.object({
   name: z.string().min(2, {
     message: 'Name must be at least 2 characters.',
   }),
@@ -18,8 +18,8 @@ const formSchema = z.object({
 });
 
 const ContactForm = () => {
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<z.infer<typeof ContactFormSchema>>({
+    resolver: zodResolver(ContactFormSchema),
     defaultValues: {
       name: '',
       email: '',
@@ -27,15 +27,17 @@ const ContactForm = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
+  function onSubmit(values: z.infer<typeof ContactFormSchema>) {
     console.log(values);
+    form.setError('root', {
+      message: 'Form submitted failed!',
+    });
   }
 
   return (
     <Form {...form}>
       <form
+        id="contact-form"
         onSubmit={form.handleSubmit(onSubmit)}
         className="space-y-8 bg-grey rounded-4xl py-10 px-7"
       >
@@ -60,9 +62,11 @@ const ContactForm = () => {
           placeholder="Message"
           type="textarea"
         />
+        <FormMessage />
       </form>
       <Button
         type="submit"
+        form="contact-form"
         className="min-h-16 bg-dark text-white w-full rounded-2xl  py-5 text-xl mt-7 cursor-pointer hover:bg-dark/90 "
       >
         Send Message
