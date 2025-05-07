@@ -1,4 +1,5 @@
 import CaseStudies from '@/components/case-studies/CaseStudies';
+import Contact from '@/components/contact/Contact';
 import Header from '@/components/header/Header';
 import Services from '@/components/services/Services';
 import Team from '@/components/team/Team';
@@ -14,6 +15,7 @@ export default function Home() {
       <WorkingProcess />
       <Team />
       <Testimonials />
+      <Contact />
     </div>
   );
 }
