@@ -12,7 +12,13 @@ const LogoIcon = ({ icon }: LogoIconProps) => {
   const { src, alt } = icon;
   return (
     <div className="flex-none flex-center marquee-item">
-      <Image src={src} alt={alt} width={120} height={48} />
+      <Image
+        src={src}
+        alt={alt}
+        width={120}
+        height={48}
+        className="w-32 h-auto"
+      />
     </div>
   );
 };

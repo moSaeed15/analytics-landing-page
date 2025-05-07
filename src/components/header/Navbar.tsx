@@ -8,6 +8,7 @@ const Navbar = () => {
         alt="Logo"
         width={144}
         height={25}
+        className="h-6 w-36"
         priority
       />
       <div className=" w-6 h-4 flex flex-col justify-between cursor-pointer">

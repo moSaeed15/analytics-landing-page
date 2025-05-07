@@ -31,9 +31,15 @@ const ServiceCard = ({
           alt="arrow-icon"
           width={41}
           height={41}
-          className="self-end"
+          className="self-end w-10 h-10 "
         />
-        <Image src={image} alt="service-image" width={165} height={130} />
+        <Image
+          src={image}
+          alt="service-image"
+          width={165}
+          height={130}
+          className="w-40 h-32"
+        />
       </div>
     </div>
   );

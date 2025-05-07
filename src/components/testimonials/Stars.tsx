@@ -23,6 +23,7 @@ const Stars = ({
           alt="star icon"
           width={14}
           height={14}
+          className="h-3.5 w-3.5 cursor-pointer"
           onClick={() => handleStarClick(index)}
         />
       ))}

@@ -12,6 +12,7 @@ const CaseStudyCard = ({ text }: { text: string }) => {
           width={20}
           height={20}
           alt="arrow"
+          className="h-5 w-5"
         />
       </Link>
     </div>

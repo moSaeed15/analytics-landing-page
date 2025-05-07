@@ -10,7 +10,7 @@ const HeaderContent = () => {
         height={310}
         alt="hero"
         priority
-        className="mt-2 mb-5"
+        className="mt-2 mb-5 w-96 h-auto"
       />
       <p className="max-w-prose">
         Our digital marketing agency helps businesses grow and succeed online
