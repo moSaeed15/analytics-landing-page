@@ -66,10 +66,14 @@ body {
   }
 
   .button-dark {
-    @apply min-h-16 bg-dark text-white w-full rounded-2xl  py-5 text-xl mt-7 cursor-pointer hover:bg-dark/90;
+    @apply min-h-16 bg-dark text-white w-full rounded-2xl  py-5 text-xl mt-7 cursor-pointer hover:bg-green;
   }
   .button-green {
     @apply min-h-16 bg-green text-black w-full rounded-2xl  py-5 text-xl mt-7 cursor-pointer hover:bg-green/90;
+  }
+
+  .button-white {
+    @apply min-h-16 bg-white border border-dark text-black w-full rounded-2xl py-4 text-xl mt-7 cursor-pointer hover:bg-green;
   }
 
   .gradient-edge {
