@@ -3,7 +3,7 @@ import { ListItem } from './MenuList';
 
 const MenuDesktop = () => {
   return (
-    <ul className="hidden md:flex items-center  space-x-2 ">
+    <ul className="hidden md:flex items-center  space-x-2 lg:space-x-4 xl:space-x-10">
       <ListItem
         text="About us"
         className="text-[17px] lg:text-lg xl:text-xl "

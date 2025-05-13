@@ -58,7 +58,7 @@ body {
     @apply text-base xl:text-lg font-normal  leading-6; /* List item text */
   }
   .padding-x {
-    @apply pl-5 pr-7;
+    @apply pl-5 pr-7 lg:pl-10 lg:pr-12 xl:pl-24 xl:pr-28;
   }
 
   section {
