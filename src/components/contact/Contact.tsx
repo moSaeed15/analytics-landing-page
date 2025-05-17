@@ -6,6 +6,7 @@ const Contact = () => {
   return (
     <Section
       title="Contact Us"
+      className="lg:mt-32 xl:mt-36"
       description="Connect with Us: Let's Discuss Your Digital Marketing Needs"
     >
       <ContactForm />

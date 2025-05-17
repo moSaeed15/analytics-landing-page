@@ -41,7 +41,7 @@ const FormRender = ({ field, label, type, placeholder }: FormRenderProps) => {
           <Textarea
             placeholder={placeholder}
             {...field}
-            className="bg-white py-5 px-5 placeholder:text-[#898989] border-black"
+            className="bg-white py-5 px-5 placeholder:text-[#898989] lg:h-[200px] border-black "
           />
         )}
       </FormControl>

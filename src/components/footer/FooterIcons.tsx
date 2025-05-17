@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
 
-const FooterIcons = () => {
+const FooterIcons = ({ className }: { className?: string }) => {
   return (
-    <div className="flex gap-5 items-center">
+    <div className={`flex gap-5 items-center ${className}`}>
       <Image
         src="/icons/linkedin-white.svg"
         width={30}
