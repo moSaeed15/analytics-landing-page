@@ -12,7 +12,7 @@ import CaseStudyCard from './CaseStudyCard';
 
 const CaseStudiesCards = () => {
   return (
-    <div className=" ">
+    <div className="lg:hidden ">
       <Carousel>
         <CarouselContent>
           {caseStudies.map(caseStudy => (
