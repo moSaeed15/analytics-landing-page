@@ -7,9 +7,10 @@ const WorkingProcess = () => {
     <Section
       title="Our Working"
       subtitle="Process"
+      className="lg:mt-32 xl:mt-36"
       description="Step-by-Step Guide to Achieving Your Business Goals"
     >
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 lg:gap-8">
         {workingProcessList.map(item => (
           <WorkingProcessCard
             key={item.id}

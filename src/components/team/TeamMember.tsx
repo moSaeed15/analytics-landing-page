@@ -32,7 +32,7 @@ const TeamMember = ({
           alt="linkedin"
           width={40}
           height={40}
-          className="absolute top-0 right-0 h-10 w-10"
+          className="absolute top-0 right-0 h-10 w-10 inline md:hidden 2xl:inline"
         />
       </div>
       <span className="mx-auto block h-px bg-black my-5"></span>

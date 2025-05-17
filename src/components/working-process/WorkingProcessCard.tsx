@@ -27,8 +27,10 @@ const WorkingProcessCard = ({
         className="flex gap-8 w-full items-center cursor-pointer"
         onClick={() => setOpen(prev => !prev)}
       >
-        <span className="text-black text-3xl font-medium">{numberString}</span>
-        <h4 className="mr-auto">{title}</h4>
+        <span className="text-black text-3xl lg:text-4xl xl:text-5xl font-medium">
+          {numberString}
+        </span>
+        <h4 className="mr-auto  lg:text-2xl  ">{title}</h4>
 
         {!open ? (
           <Image src="/icons/plus.svg" alt="plus-icon" width={40} height={40} />
@@ -49,11 +51,11 @@ const WorkingProcessCard = ({
         }`}
       >
         <span
-          className={`mx-auto block h-[1px] mt-2 bg-black transition-all duration-500   ${
+          className={`mx-auto block h-[1px] mt-2 lg:mt-7  bg-black transition-all duration-500   ${
             open ? 'w-full' : 'w-0'
           }`}
         ></span>
-        <p className="mt-4">{description}</p>
+        <p className="mt-4 lg:mt-7">{description}</p>
       </div>
     </div>
   );
