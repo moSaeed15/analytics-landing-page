@@ -1,6 +1,4 @@
 'use client';
-import { Menu } from 'lucide-react';
-import Link from 'next/link';
 import React, { useRef } from 'react';
 import MenuList from './MenuList';
 
