@@ -9,14 +9,18 @@ interface SectionProps {
 
 const Section = ({ title, subtitle, description, children }: SectionProps) => {
   return (
-    <section className="padding-x flex flex-col">
-      <h2 className="green-title text-center self-center">{title}</h2>
-      {subtitle && (
-        <h2 className="green-title text-center self-center">{subtitle}</h2>
-      )}
-      <p className="mt-7 mb-10 text-center max-w-prose self-center">
-        {description}
-      </p>
+    <section className="padding-x ">
+      <div className="flex flex-col lg:flex-row mb-20">
+        <h2 className="green-title text-center self-center lg:text-start">
+          {title}
+        </h2>
+        {subtitle && (
+          <h2 className="green-title text-center  self-center">{subtitle}</h2>
+        )}
+        <p className="mt-7 mb-10 lg:mt-0 lg:mb-0 text-center lg:text-start lg:ml-10 max-w-prose self-center">
+          {description}
+        </p>
+      </div>
       {children}
     </section>
   );

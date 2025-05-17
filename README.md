@@ -34,3 +34,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+# To be done
+
+Summary
+I need a programmer that is an expert in ADA compliance for a website. Particularly a restaurant website.
+
+I need someone with expert knowledge in ADA standards such as WCAG 2.2 and WCAG 2.1 AA.
+
+I need help to make my restaurant website fully ADA compliant, fully web accessible to disabled and visually impaired people that come to my website.
+
+I need someone that has knowledge of tools that can scan my website, find all the issues and fix it properly via the guidelines.
+
+Please send me sample work of websites you have made ADA compliant.

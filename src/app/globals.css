@@ -12,6 +12,7 @@
   --color-black: #000000;
   --text-2xl: 1.625rem;
   --text-5xl: 2.6875rem;
+  --breakpoint-xs: 32.5rem;
 }
 
 body {
@@ -58,7 +59,7 @@ body {
     @apply text-base xl:text-lg font-normal  leading-6; /* List item text */
   }
   .padding-x {
-    @apply pl-5 pr-7 lg:pl-10 lg:pr-12 xl:pl-24 xl:pr-28;
+    @apply pl-5 pr-7 md:pl-8 md:pr-10  lg:pl-10 lg:pr-12 xl:pl-24 xl:pr-28 2xl:pl-52 2xl:pr-52;
   }
 
   section {
@@ -66,14 +67,14 @@ body {
   }
 
   .button-dark {
-    @apply min-h-16 bg-dark text-white w-full rounded-2xl  py-5 text-xl mt-7 cursor-pointer hover:bg-green;
+    @apply min-h-16 bg-dark text-white w-full rounded-2xl  py-5 text-xl mt-7 cursor-pointer hover:bg-green hover:text-dark transition duration-300;
   }
   .button-green {
     @apply min-h-16 bg-green text-black w-full rounded-2xl  py-5 text-xl mt-7 cursor-pointer hover:bg-green/90;
   }
 
   .button-white {
-    @apply min-h-16 bg-white border border-dark text-black w-full rounded-2xl py-4 text-xl mt-7 cursor-pointer hover:bg-green;
+    @apply min-h-16 bg-white border border-dark text-black w-full rounded-2xl py-4 text-xl mt-7 cursor-pointer hover:bg-green  transition duration-300;
   }
 
   .gradient-edge {

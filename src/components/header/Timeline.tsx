@@ -39,6 +39,9 @@ const Timeline = () => {
           {logosIconsList.map(icon => (
             <LogoIcon key={icon.alt} icon={icon} />
           ))}
+          {logosIconsList.map(icon => (
+            <LogoIcon key={icon.alt} icon={icon} />
+          ))}
         </div>
       </div>
     </div>

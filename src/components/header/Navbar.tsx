@@ -4,7 +4,7 @@ import MenuDesktop from './MenuDesktop';
 
 const Navbar = () => {
   return (
-    <nav className="py-7 padding-x flex justify-between items-center">
+    <nav className="  py-7 padding-x flex justify-between items-center">
       <Image
         src={'/icons/logo.svg'}
         alt="Logo"
