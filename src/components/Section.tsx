@@ -17,7 +17,7 @@ const Section = ({
 }: SectionProps) => {
   return (
     <section className={`padding-x ${className}`}>
-      <div className="flex flex-col lg:flex-row mb-20">
+      <div className="flex flex-col lg:flex-row lg:mb-20">
         <h2 className="green-title text-center self-center lg:text-start">
           {title}
         </h2>
